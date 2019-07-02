@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#navbar { 
+  background-color: dodgerblue;
+}
+
+#navbar {
+  /* box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2); */
+  box-shadow: none;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+}
+
+#img_header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#img_header > img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(50%);
+  object-fit: cover;
+}
+
+#img_header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(11, 15, 16, 0.6) 0% , rgba(4, 4, 5, 0.7) 10%);
+  top: 0;
+}
+
+#header > div > img {
+  width: 100%;
+}
+#title {
+  position: absolute;
+  bottom: -25px;
+}
+
+#title > p {
+  color: rgb(103, 71, 31);
+  font-size: 104px;
+  letter-spacing: .2em;
+  padding-top: 20px;
+  text-align: center;
+  margin: 4px;
+  background: -webkit-linear-gradient(#fe8, rgb(103, 71, 31));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#wrapper {
+  width: 100%;
+  padding: 24px;
+  background-image: radial-gradient(ellipse closest-side at 50% 40%,#1b2528,#0a0a0c)
+}
+
+#wrapper > h5 {
+  color: #c4b998;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 4px;
+  margin-bottom: 8rem;
+}
+
+#content {
+  display: flex;
+  width: 100%;
+}
+
+#content > div {
+  width: 100%;
+  min-height: 200px;
+  margin: 6px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  padding: 16px;
+  border-bottom: 1px solid #31271e;
+  position: relative;
+  z-index: 9999;
+  background-color: #111318;
+}
+
+.label > h3 {
+  margin: 0;
+  text-align: center;
+  color: #c4b998;
+  font-size: 14px;
+}
+
+.project {
+  width: 100px;
+  height: 100px;
+  padding: 16px;
+  margin: 36px auto;
+  overflow: hidden;
+}
+
+.project > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item {
+  border: 2px solid rgb(103, 71, 31);
+  border-radius: 50%;
+  margin: 36px auto;
+  width: 100px;
+  height: 100px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.item > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Left */
+
+#left {
+  position: relative;
+  border: 1px solid #31271e;
+  background-color: #111318;
+}
+
+/* #left::after {
+  position: absolute;
+  content: '';
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0.7) 100%), url('static/avatar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 62%;
+  filter: grayscale(96%) brightness(0.5);
+} */
+
+#left > div:nth-child(2) {
+  overflow: auto;
+  position: relative;
+  max-height: 600px;
+  z-index: 99;
+}
+
+/* Center */
+
+#center {
+  flex-basis: 170%;
+}
+
+#center > #top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  position: relative; 
+  border: 1px solid #31271e;
+  background-color: #111318;
+  margin-bottom: 12px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+#top > #avatar {
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 130px;
+}
+
+#top p {
+  text-align: center;
+}
+
+#top p:nth-child(1) {
+  color: #c4b998;
+  font-weight: 500;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+#top p:nth-child(2) {
+  color: #937341;
+  font-weight: 600;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+#avatar::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(103, 71, 31);
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url('static/avatar.jpg');
+}
+
+#avatar > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#center > #bottom {
+  min-height: 100px;
+  position: relative; 
+  border: 1px solid #31271e;
+  background-color: #111318;
+}
+
+#right {
+  border: 1px solid #31271e;
+  background-color: #111318;
+}
+
+#right > div:nth-child(2) {
+  overflow: auto;
+  position: relative;
+  max-height: 600px;
+  z-index: 99;
+}
