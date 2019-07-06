@@ -27,7 +27,7 @@
     <div id="img_header">
       <img src="static/bg.png" alt="">
     </div>
-    <div id="title">
+    <div id="title" class="wow flipInX" >
       <p>DZB</p>
       <img src="static/HeaderDivider.png" alt="">
     </div>
@@ -40,38 +40,7 @@
         <div class="label">
           <h3>Skill</h3>
         </div>
-        <div>
-          <div class="item">
-            <img src="static/logoSkill/react.png" alt="logo" />
-            <div class="tip">
-              React
-            </div>
-          </div>
-          <div class="item">
-            <img src="static/logoSkill/python.png" alt="logo" />
-            <div class="tip">
-                Python
-            </div>
-          </div>
-          <div class="item">
-            <img src="static/logoSkill/js.png" alt="logo" />
-            <div class="tip">
-                Javascript
-            </div>
-          </div>
-          <div class="item">
-            <img src="static/logoSkill/html.png" alt="logo" />
-            <div class="tip">
-                HTML
-            </div>
-          </div>
-          <div class="item">
-            <img src="static/logoSkill/css.png" alt="logo" />
-            <div class="tip">
-                CSS
-            </div>
-          </div>
-        </div>
+        <div></div>
       </div>
       <!-- Center -->
       <div id="center">
@@ -84,23 +53,30 @@
             <p> ~ Phạm Phú Quý Đôn</p>
           </div>
         </div>
-        <div id="bottom"></div>
+        <div id="bottom">
+          <div id="bottom-bg"></div>
+          <div id="bottom-summary">
+            <p></p>
+          </div>
+        </div>
       </div>
       <!-- Right -->
       <div id="right">
-        <div class="label">
+          <div class="label">
             <h3>Project</h3>
           </div>
-          <div>
-            <div class="project">
-              <img src="static/logoSkill/react.png" alt="logo" />
-            </div>
+          <div></div>
           </div>
       </div>
     </div>
   </div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
