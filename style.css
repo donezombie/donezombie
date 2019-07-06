@@ -279,6 +279,7 @@ body {
 
 #center > #top {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100px;
@@ -286,7 +287,7 @@ body {
   border: 1px solid #31271e;
   background-color: #111318;
   margin-bottom: 12px;
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 4rem;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -375,6 +376,49 @@ body {
   line-height: 1.6;
   font-weight: 400;
   text-align: justify;
+}
+
+#bottom-hobby {
+  color: #c4b998;
+  position: relative;
+}
+
+#bottom-contact {
+  position: relative;
+}
+
+#bottom-contact > p {
+  color: #c4b998;
+  margin: 8px;
+  text-align: center;
+}
+
+#list-contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#list-contact > img {
+  transition: all .5s;
+  margin: 0 14px;
+}
+
+#list-contact > img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px 10px rgba(0, 0, 0, .4);
+  cursor: pointer;
+}
+
+#contact-phone-email {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #c4b998;
+  font-weight: 300;
+  font-size: 12px;
 }
 
 #right {

@@ -4,6 +4,7 @@ const authorQuotes = document.getElementById('top').children[1].children[1];
 const skillWrapper = document.getElementById('left').children[1];
 const projectWrapper = document.getElementById('right').children[1];
 const summary = document.getElementById('bottom-summary').children[0];
+const listContact = document.getElementById('list-contact');
 // data var import from data.js
 
 
@@ -14,11 +15,19 @@ summary.innerHTML = data.summary;
 
 const mySkill = data.mySkill;
 const myProject = data.myProject;
+const contact = data.contact;
 
 const clickToVisit = (e) => {
   const url = e.getAttribute('url');
   window.open(url);
 }
+
+contact.forEach(el => {
+  let HTML = `
+    <img src="${el.icon}" style="width: 40px" url="${el.url}" onclick="clickToVisit(this)" />
+  `;
+  listContact.insertAdjacentHTML('beforeend', HTML);
+})
 
 mySkill.forEach(el => {
   let HTML = `
