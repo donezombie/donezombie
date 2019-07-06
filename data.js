@@ -1,6 +1,6 @@
 const data = {
   alias: "DZB",
-  quotes: "'' Cặc ''",
+  quotes: "'' Building great application to solve real problems ''",
   authorQuotes: "~ Phạm Phú Quý Đôn",
   summary: `Hi Guys, I'm Pham Phu Quy Don a.k.a Donezombie or DZB <br /><br />
   I was born in 1996 in Yen Bai City. I'm studying and researching in Thang Long University. My major is Computer Science and Technology.
