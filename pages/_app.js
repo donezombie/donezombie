@@ -2,12 +2,14 @@ import React from 'react';
 import App from 'next/app';
 import Router from 'next/router';
 import NProgress from 'nprogress';
+import ThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
 import withRedux from 'next-redux-wrapper';
 import withReduxSaga from 'next-redux-saga';
 import createStore from '../store'
 import Layout from '../components/Layout';
+import theme from '../src/theme';
 
 Router.events.on('routeChangeStart', url => {
   console.log(`Loading: ${url}`)
@@ -26,14 +28,18 @@ class MyApp extends App {
   }
 
   render () {
+    console.log(theme)
     const { Component, pageProps, store } = this.props
     return (
       <Provider store={store}>
         <Layout>
-          <Head>
-            <link rel="shortcut icon" type="image/png" href="static/favicon.ico"/>
-          </Head>
-          <Component {...pageProps} />
+          <ThemeProvider theme={theme}>
+            <Head>
+              <link rel="shortcut icon" type="image/png" href="static/favicon.ico"/>
+              <title>Pham Phu Quy Don - DZB </title>
+            </Head>
+            <Component {...pageProps} />
+          </ThemeProvider>
         </Layout>
       </Provider>
     )

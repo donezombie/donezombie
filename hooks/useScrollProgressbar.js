@@ -12,9 +12,10 @@ export default () => {
           progressBar.style.width = (scrollY / maxHeight) * 100 + "%";
         }
       };
-
+      window.addEventListener("resize", scrollFunction);
       window.addEventListener("scroll", scrollFunction);
       return () => {
+        window.removeEventListener("resize", scrollFunction);
         window.removeEventListener("scroll", scrollFunction);
       }
     }
