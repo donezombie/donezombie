@@ -1,18 +1,24 @@
+import { IoLogoFacebook } from 'react-icons/io';
+import { FaInstagram, FaGithub } from 'react-icons/fa'
+
 export const socialNetwork = [
   {
     label: '/donezombiee',
     name: 'facebook',
-    path: 'https://facebook.com/donezombiee'
+    path: 'https://facebook.com/donezombiee',
+    icon: IoLogoFacebook
   },
   {
     label: '/donezombie',
     name: 'instagram',
-    path: 'https://instagram.com/donezombie'
+    path: 'https://instagram.com/donezombie',
+    icon: FaInstagram
   },
   {
     label: '/donezombie',
     name: 'github',
     path: 'https://github.com/donezombie',
+    icon: FaGithub
   }
 ];
 

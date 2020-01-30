@@ -71,6 +71,7 @@ p, h1, h2, h3, h4, h5, h6 {
   max-width: 1180px;
   margin: auto;
   height: 100%;
+  margin-bottom: 25px;
 }
 
 .box {
@@ -92,6 +93,13 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   height: 100%;
   transform: translateY(12px);
+}
+
+@media (max-width: 768px) {
+  .box-right {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .box-right > ul {
@@ -148,4 +156,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .info {
   margin: 0 !important;
+}
+
+.spacing-container-grid {
+  margin: 0 !important;
+  width: 100% !important;
 }

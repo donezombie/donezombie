@@ -2,9 +2,13 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import makeStyles from '@material-ui/core/styles/makeStyles';
+import hooks from '../hooks';
 import LeftComponent from '../components/LeftComponent';
+import RightComponent from '../components/RightComponent';
 
 import { socialNetwork, name, subName, describle } from '../src/data';
+
+const { useScrollProgressbar } = hooks;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,9 +25,10 @@ const useStyles = makeStyles(theme => ({
 
 const Home = (props) => {
   const classes = useStyles();
+  useScrollProgressbar();
   return (
     <div className="container" style={{ marginTop: 25 }}>
-      <Grid container spacing={3}>
+      <Grid container className="spacing-container-grid">
         <Grid item xs={12} sm={12} md={3}>
           <Paper classes={{ root: classes.transparentPaper }} elevation={0} square className={classes.paper}>
             <LeftComponent
@@ -35,7 +40,9 @@ const Home = (props) => {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={9}>
-          <Paper square className={classes.paper}>center</Paper>
+          <Paper square className={classes.paper}>
+            <RightComponent />
+          </Paper>
         </Grid>
       </Grid>
     </div>

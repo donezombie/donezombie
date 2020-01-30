@@ -17,6 +17,9 @@ export default () => {
       return () => {
         window.removeEventListener("resize", scrollFunction);
         window.removeEventListener("scroll", scrollFunction);
+        if (progressBar) {
+          progressBar.style.width = '0';
+        }
       }
     }
   }, []);

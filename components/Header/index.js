@@ -2,8 +2,7 @@ import React, { Fragment } from 'react';
 import hooks from '../../hooks';
 
 export default () => {
-  const { useScrollProgressbar, useParticles } = hooks;
-  useScrollProgressbar();
+  const { useParticles } = hooks;
   useParticles();
 
   return (

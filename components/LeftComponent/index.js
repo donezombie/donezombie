@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
     '& > ul > li': {
       paddingBottom: theme.marginBetweenText,
       display: 'flex',
+      alignItems: 'center',
     },
     '& > ul > li > a': {
       textDecoration: 'none',
@@ -48,9 +49,10 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.primary.hover,
       },
     },
-    '& ul img': {
+    '& ul svg': {
       maxWidth: 20,
-      objectFit: 'cover',
+      color: '#000',
+      fontSize: 18,
     }
   }
 }))
@@ -65,7 +67,9 @@ export default ({ name, subName, describle, socialNetwork}) => {
       <ul>
         {
           socialNetwork.map(el => (
-            <li key={el.name}><img src={`/static/assets/icon/${el.name}.svg`} alt="logo" />
+            <li key={el.name}>
+              {/* <img src={`/static/assets/icon/${el.name}.svg`} alt="logo" /> */}
+              <el.icon />
               <a target="_blank" href={el.path}>{el.label}</a>
             </li>
           ))

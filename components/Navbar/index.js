@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div id="navbar">
       <div className="container">
-        <Grid container spacing={3}>
+        <Grid container spacing={3} className="spacing-container-grid">
           <Grid item xs={12} md={3} style={{ position: 'relative' }}>
             <div className="box-circle avatar">
               <img src="/static/assets/avatar.jpg" alt="avatar" />
