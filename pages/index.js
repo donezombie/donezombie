@@ -27,7 +27,7 @@ const Home = (props) => {
   const classes = useStyles();
   useScrollProgressbar();
   return (
-    <div className="container" style={{ marginTop: 25 }}>
+    <div className="container animated fadeIn" style={{ marginTop: 25 }}>
       <Grid container className="spacing-container-grid">
         <Grid item xs={12} sm={12} md={3}>
           <Paper classes={{ root: classes.transparentPaper }} elevation={0} square className={classes.paper}>

@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.is-hover:hover {
+  cursor: pointer;
+  color: var(--main-color) !important;
+}
+
 body {
   margin: 0;
   padding: 0;
