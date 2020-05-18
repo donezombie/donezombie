@@ -1,7 +1,5 @@
-import useScrollProgressbar from './useScrollProgressbar';
-import useParticles from './useParticles';
+import useScrollProgressbar from './useScrollProgressBar.js';
 
 export default  {
   useScrollProgressbar,
-  useParticles,
 }

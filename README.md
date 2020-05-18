@@ -1,27 +1,36 @@
-# next-js-dzb
-# Run script:
-1. ```git clone https://github.com/donezombie/next-js-dzb.git```
-2. ```npm i```
-3. ```npm run dev```
-4. ```rm -rf .git```
+<h1 align="center">React + Next.js + Redux + Redux Saga + Scss</h1>
 
-# With package 
-<pre>
-    "@material-ui/core": "^4.4.3",
-    "@material-ui/icons": "^4.4.3",
-    "axios": "^0.19.0",
-    "classnames": "^2.2.6",
-    "es6-promise": "^4.2.8",
-    "express": "^4.17.1",
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.0.6",
-    "next-redux-saga": "^4.0.2",
-    "next-redux-wrapper": "^4.0.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-redux": "^7.1.1",
-    "redux": "^4.0.4",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-saga": "^1.1.1"
- </pre>
- And some example about dynamic route / fetching data
+<p align="center">
+  <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.js-v9.3.5-blueviolet.svg"></a>
+  <a href="https://reactjs.org/" target="_blank"><img src="https://img.shields.io/badge/React-v16.13.1-%238DD6F9.svg?logo=React"></a>
+  <a href="https://github.com/codica2" target="_blank"><img src="https://img.shields.io/badge/licence-MIT-green.svg" /></a>
+</p>
+
+## Packges use in template:
+
+- React.js
+- Next.js ( latest ) 
+- SCSS
+- Redux
+- Redux Saga
+- Axios
+- Formik
+- Yup Validator
+
+## How to use
+
+```javascript
+npm i
+npm run dev ( developepment )
+npm start ( production )
+```
+
+## Environment
+
+You can access your .env variables by deconstructing 'process.env' object, both on client and server.
+Just make sure that you reboot the server when updating .env file
+
+### Development
+
+- Upgrade Nextjs 9.3.
+- Restructure Redux folder. 
