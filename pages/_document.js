@@ -9,9 +9,11 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
 					<meta name="theme-color" content={theme.palette.primary.main} />
-          <meta charSet="utf-8" />
           <meta content="IE=edge" />
           <link rel="shortcut icon" href="/static/assets/favicon.jpg" />
+          <meta name="robots" content="index,follow" />
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+          <meta http-equiv="content-language" content="vi" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
