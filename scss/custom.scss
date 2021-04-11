@@ -2,14 +2,58 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: 'Roboto', sans-serif;
+  color: $black-color;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  color: $black-color;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  letter-spacing: 1px;
+}
+
+p {
+  margin: 0;
 }
 
 hr {
   width: 100%;
+}
+
+.card-container {
+  position: relative;
+  padding: 2rem;
+  .card__img {
+    max-width: 250px;
+    margin-right: 3rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .card__content {
+    .card__content-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: block;
+    }
+  }
+
+  .card__router-push {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    a {
+      text-decoration: none;
+      color: $main-color;
+    }
+  }
 }

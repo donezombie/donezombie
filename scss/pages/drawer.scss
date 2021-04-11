@@ -1,0 +1,114 @@
+// Fix color app bar
+h6.MuiTypography-h6 {
+  color: $white-color;
+}
+
+.MuiAppBar-root {
+  .MuiIconButton-label {
+    color: $white-color;
+  }
+}
+
+.drawer-container {
+  height: 100%;
+  background-color: $main-color;
+  h1, h2, h3, h4, h5, h6, a, span, p {
+    color: $text-color;
+  }
+
+  .info {
+    .info__name {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .info__avatar {
+      max-width: 140px;
+      max-height: 140px;
+      margin: auto;
+      img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .info__desc {
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    .info__social {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 1rem;
+
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        border-radius: 50%;
+        background-color: $white-color;
+        transition: .3s;
+        border: 1px solid $main-color;
+
+        svg {
+          font-size: 1.4rem;
+          color: $main-color;
+        }
+
+        &:hover {
+          background-color: $main-color;
+          border: 1px solid $white-color;
+          svg {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    .nav-profile-item {
+      color: $text-color;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      padding: 2px 12px;
+
+      border: 1px solid $main-color;
+      border-radius: 6px;
+
+      &:hover:not(.selected) {
+        opacity: 0.6;
+      }
+
+      &.selected {
+        border: 1px solid $white-color;
+        background-color: $white-color;
+        color: $main-color;
+      }
+
+      .nav-profile__icon {
+        margin-right: 1rem;
+        svg {
+          margin-top: 2px;
+          font-size: 1.5rem;
+        }
+      }
+
+      .nav-profile__name {
+        flex-grow: 1;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -4,5 +4,7 @@
 @import "./custom.scss";
 
 // Page
+@import "./common.scss";
 @import "./pages/home.scss";
-@import "./pages/navbar.scss";
+@import "./navbar.scss";
+@import "./pages/drawer.scss"

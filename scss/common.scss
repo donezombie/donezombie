@@ -1,0 +1,53 @@
+.label-dzb {
+  padding: 0px 0;
+  border-left: 5px solid $main-color;
+  .text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 1.5rem;
+  }
+}
+
+.sub-title-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.js-icon {
+  svg {
+    color: #F1DE4F;
+  }
+}
+
+.html-icon {
+  svg {
+    color: #DE6E3C;
+  }
+}
+
+.sass-icon {
+  svg {
+    color: #BF6B97;
+  }
+}
+
+.react-icon {
+  svg {
+    color: #62D4FA;
+  }
+}
+
+.btn-primary {
+  background-color: $main-color !important;
+  span {
+    color: $text-color !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $black-color !important;
+  span {
+    color: $text-color !important;
+  }
+}
