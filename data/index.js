@@ -11,14 +11,14 @@ import { SiJavascript, SiReact, SiSass, SiHtml5 } from "react-icons/si";
 
 export default {
   fullName: "Phạm Phú Quý Đôn",
-  position: "Super Junior Software Engineer",
+  position: "Front-end developer",
   descriptionPosition:
     `I'm a software engineer specialised in frontend development for complex scalable web apps. My objective is to become a professional software engineer.
     I always try my best to learn new programming languages and develop new ideas to create quality products.`,
   avatar: "/static/assets/avatar.jpeg",
   imgAboutMe: "/static/assets/avatar.jpeg",
-  description: `Hi, my name is Done (Donezombie) <br /> I have 3 years experience so I'm a super junior software engineer. Welcome to my personal website!`,
-  descriptionWhatIDo: `I have more than 3 years' experience building software for
+  description: `Hi, my name is Đôn <br /> I have more 3 years experience. Welcome to my personal website!`,
+  descriptionWhatIDo: `I have more than 3 years' experience building web-app for
   clients all over the world. Below is a quick overview of my main
   technical skill sets and technologies I use. Want to find out more
   about my experience? Check out my online resume and project
@@ -128,7 +128,7 @@ export default {
       name: "Wisr Credit",
       url: "https://wisrcredit.com.au/",
       img:
-        "https://wisrcredit.com.au/static/mint-570a82267b8dfefe1bc32def069249a3.png",
+        "https://australianfintech.com.au/wp-content/uploads/sites/7/2018/03/wisr2-1.jpg",
       describe:
         "WisrCredit will let you know your score can change over time so youʼll be able to see how the changes occur in relation to your behaviours over time",
     },
