@@ -1,5 +1,5 @@
 import React from "react";
-import useScrollProgressBar from "hooks/useScrollProgressBar";
+import useScrollProgressBar from "../hooks/useScrollProgressBar";
 import DefaultLayout from "layout/DefaultLayout";
 import AboutmeSection from "components/Sections/AboutmeSection";
 import WhatIDoSection from "components/Sections/WhatIDoSection";
