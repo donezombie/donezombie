@@ -1,5 +1,5 @@
 <div align="center">
-<img width="100%" height = "100%" src="https://raw.githubusercontent.com/donezombie/donezombie/main/pepe.gif" alt="cover" />
+<img width="50%" height = "50%" src="https://raw.githubusercontent.com/donezombie/donezombie/main/pepe.gif" alt="cover" />
 </div>
 
 <h1> Hello Guys < Developers/ >! <img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 30px> </h1>
